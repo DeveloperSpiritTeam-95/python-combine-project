@@ -5,8 +5,8 @@ from cx_Oracle import DatabaseError
 def create_connection():
     try:
         connection = cx_Oracle.connect(
-            user='prabhakar',
-            password='prabha225',
+            user='user name',
+            password='password',
             dsn='localhost:1521/xe'
         )
         if connection is not None:
