@@ -24,7 +24,8 @@ def koch_snowflake(t, length, depth):
 screen = turtle.Screen()
 screen.bgcolor("white")
 t = turtle.Turtle()
-t.speed(0)  # Set the turtle speed to the maximum
+t.speed(0)  
+# Set the turtle speed to the maximum
 
 # Draw the Koch snowflake
 length = 300  # Length of each side of the snowflake
@@ -32,6 +33,7 @@ depth = 4     # Recursion depth
 t.penup()
 t.goto(-length / 2, length / 3)
 t.pendown()
+
 koch_snowflake(t, length, depth)
 
 # Hide the turtle and display the window
